@@ -1,17 +1,22 @@
 /* importando o global */
 @import url('./global.css');
 
-body {
-    /* usando a variável global no bg */
-    /* background-color: var(--variable-example); */
-}
+/* body {
+    usando a variável global no bg */
+    /* background-color: var(--variable-example);
+}*/
 
+/* Hero */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 56px;
-    background: url();
     background-repeat: no-repeat;
     background-position: right; 
+}
+
+/* Jogos */
+.jogos {
+    scroll-margin-top: 60px;
 }

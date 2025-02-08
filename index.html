@@ -10,9 +10,9 @@
 
     <!-- import de estilo -->
     <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
 
-    <title>Second Landingpage Bootstrap</title>
+    <title>The Last of Us Wiki</title>
 </head>
 
 <body>
@@ -20,15 +20,17 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Divice</a>
+
+                <a class="navbar-brand" href="#">TLOU Wiki</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#service">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#jogos">Jogos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                     </ul>
@@ -38,14 +40,205 @@
     </header>
 
     <!-- Hero -->
-     <main id="hero" class="hero">
-        <div class="container">
-            <h1>Bem vindo ao meu site!</h1>
+    <main id="hero" class="hero">
+        <div class="container mt-5">
+            <h1>Bem vindo ao The Last of Us Wiki!</h1>
             <p class="lead">Transformando ideias em realidade digital.</p>
-            <a href="#servicos" class="btn btn-primary">Saiba Mais</a>
+            <a href="#jogos" class="btn btn-primary">Saiba Mais</a>
         </div>
-     </main>
+    </main>
 
+    <!-- Card Section -->
+    <section id="jogos" class="jogos container my-5">
+        <h2 class="mb-4 text-center">Os Jogos</h2>
+
+        <div class="row text-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <img src="src/assets/images/the-last-of-us1.jpg" class="img-card card-img-top" alt="Imagem de The Last of Us 1">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The Last of Us</h5>
+
+                        <p class="card-text">Resumo Sobre</p>
+
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Detalhes</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <img src="src/assets/images/the-last-of-us-1-dlc.jpg" class="img-card card-img-top" alt="Imagem da DLC de The Last of Us">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The Last of Us (Left Behind)</h5>
+
+                        <p class="card-text">Resumo Sobre</p>
+
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2">Detalhes</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <img src="src/assets/images/the-last-of-us2.jpg" class="img-card card-img-top" alt="Imagem de The Last of Us 2">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The Last of Us 2</h5>
+
+                        <p class="card-text">Resumo Sobre</p>
+
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal3">Detalhes</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Modais -->
+    <div id="modal1" class="modal fade" tabindex="-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Instrutor de Ti</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                
+                </div>
+                
+                <div class="modal-body">Mais detalhes sobre o serviço.</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="modal2" class="modal fade" tabindex="-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Instrutor de Ti</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <div class="modal-body">Mais detalhes sobre o serviço.</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="modal3" class="modal fade" tabindex="-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Instrutor de Ti</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <div class="modal-body">Mais detalhes sobre o serviço.</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Carrosel de Depoimentos -->
+    <section id="depoimentos" class="container my-5">
+        
+        <h2 class="mb-4 text-center">Depoimentos</h2>
+        
+        <div id="carrosselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active text-center">
+
+                    <p class="lead">Melhor Professor de Ti</p>
+                    
+                    <small>Roberto Chile - SENAI</small>
+
+                </div>
+
+                <div class="carousel-item text-center">
+                
+                    <p class="lead">Melhor Chefe</p>
+                
+                    <small>Gabriel - Design Gráfico</small>
+                
+                </div>
+
+                <div class="carousel-item text-center">
+                
+                    <p class="lead">Funcionário Exemplar</p>
+                
+                    <small>Evandro - Hexa-IT</small>
+                
+                </div>
+
+            </div>
+
+            <!-- Botões de Navegação -->
+             <button type="button" class="carousel-control-prev" data-bs-target="#carrosselDepoimentos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+             <button type="button" class="carousel-control-next" data-bs-target="#carrosselDepoimentos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <footer id="footer" class="bg-dark py-4 text-white text-center">
+        <p>Texto 1</p>
+        <p>Texto 2</p>
+        <p>Redes Sociais: 
+            <a href="#" class="text-white">Instagram</a> 
+            <a href="#" class="text-white">Linkedin</a>
+        </p>
+        <p>2025 Digivicedex, Todos os direitos reservados</p>
+    </footer>
 
 
     <!-- import bootstrap -->
