@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
 
-                <a class="navbar-brand" href="#">TLOU Wiki</a>
+                <a class="navbar-brand" href="#">The Last of Us Wiki</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
                         <li class="nav-item"><a class="nav-link" href="#jogos">Jogos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#criticas">Criticas</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,17 +39,35 @@
     </header>
 
     <!-- Hero -->
-    <main id="hero" class="hero">
-        <div class="container mt-5">
-            <h1>Bem vindo ao The Last of Us Wiki!</h1>
-            <p class="lead">Transformando ideias em realidade digital.</p>
-            <a href="#jogos" class="btn btn-primary">Saiba Mais</a>
+    <main id="hero" class="hero d-flex justify-content-between align-items-center pb-4">
+        <div class="d-flex flex-column gap-1 ms-5">
+            <h1>Bem vindo ao The Last of Wiki!</h1>
+            <p class="lead">"Depois de tudo o que vivemos, o que fizemos, não pode ser por nada."</p>
+        </div>
+
+        <div class="me-5">
+            <img src="src/assets/images/The Last of Us Main.svg" alt="The Last of Us Imagem do Logo">
         </div>
     </main>
 
-    <!-- Card Section -->
-    <section id="jogos" class="jogos container my-5">
-        <h2 class="mb-4 text-center">Os Jogos</h2>
+    <!-- Sobre -->
+    <section class="d-flex justify-content-center align-items-center mx-5 pb-4">
+        <div class="d-flex flex-column justify-content-center align-items-center mx-5 gap-3">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <img src="src/assets/icons/notes.svg" class="pb-1" style="width: 40px;" alt="Icone de Prancheta">
+                <h2>Sobre</h2>
+            </div>
+            <p class="text-center">The Last of Us é um jogo eletrônico de ação-aventura e sobrevivência desenvolvido pela Naughty Dog e publicado pela Sony Computer Entertainment.<br>Seu primeiro jogo foi lançado em 2013, tendo sua DLC (Left Behind) lançada em 2014, seu segundo titulo (The Last of Us Part II) lançado em 2020 e,<br>sua série na HBO lançada em 2023.</p>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section id="jogos" class="jogos container d-flex flex-column justify-content-center align-items-center my-5">
+
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <img src="src/assets/icons/game-controller.svg" class="pb-3" style="width: 7%;" alt="Icone de Controle de Videogame">
+            <h2 class="mb-4 text-center">Os Jogos</h2>
+        </div>
 
         <div class="row text-center">
 
@@ -115,7 +132,7 @@
 
     </section>
 
-    <!-- Modais -->
+    <!-- Modals -->
     <div id="modal1" class="modal fade" tabindex="-1">
 
         <div class="modal-dialog">
@@ -124,13 +141,16 @@
 
                 <div class="modal-header">
 
-                    <h5 class="modal-title">Instrutor de Ti</h5>
+                    <h5 class="modal-title">The Last of Us</h5>
 
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 
                 </div>
                 
-                <div class="modal-body">Mais detalhes sobre o serviço.</div>
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center gap-2">
+                    <p>Breve Resumo</p>
+                    <img src="src/assets/images/the-last-of-us-I-modal.jpg" class="w-100 rounded-3" alt="Imagem de The Last of Us I">
+                </div>
 
             </div>
 
@@ -146,13 +166,16 @@
 
                 <div class="modal-header">
 
-                    <h5 class="modal-title">Instrutor de Ti</h5>
+                    <h5 class="modal-title">The Last of Us (Left Behind)</h5>
 
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 
                 </div>
 
-                <div class="modal-body">Mais detalhes sobre o serviço.</div>
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center gap-2">
+                    <p>Breve Resumo</p>
+                    <img src="src/assets/images/the-last-of-us-left-behind-modal.jpg" class="w-100 rounded-3" alt="Imagem da DLC Left Behind de The Last of Us I">
+                </div>
 
             </div>
 
@@ -168,13 +191,16 @@
 
                 <div class="modal-header">
 
-                    <h5 class="modal-title">Instrutor de Ti</h5>
+                    <h5 class="modal-title">The Last of Us 2</h5>
 
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 
                 </div>
 
-                <div class="modal-body">Mais detalhes sobre o serviço.</div>
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center gap-2">
+                    <p>Breve Resumo</p>
+                    <img src="src/assets/images/the-last-of-us-partII.jpg" class="w-100 rounded-3" alt="Imagem de The Last of Us Part II">
+                </div>
 
             </div>
 
@@ -182,47 +208,71 @@
 
     </div>
 
-    <!-- Carrosel de Depoimentos -->
-    <section id="depoimentos" class="container my-5">
+    <!-- Carrosel de criticas -->
+    <section id="criticas" class="container my-5 py-5">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <img src="src/assets/icons/statistic-grow.svg" class="pb-4" style="width: 5%;" alt="Icone de Seta de Estatistica para Cima">
+            <h2 class="mb-4 text-center">Criticas</h2>
+        </div>
         
-        <h2 class="mb-4 text-center">Depoimentos</h2>
-        
-        <div id="carrosselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+        <div id="carrosselcriticas" class="carousel slide" data-bs-ride="carousel">
             
             <div class="carousel-inner">
                 
-                <div class="carousel-item active text-center">
+                <div class="carousel-item active d-flex flex-column text-center">
 
-                    <p class="lead">Melhor Professor de Ti</p>
+                    <p class="fs-4 lead">The Last of Us I</p>
                     
-                    <small>Roberto Chile - SENAI</small>
+                    <small class="fs-5">Nota 5</small>
+
+                    <div class="d-flex justify-content-center align-items-center mt-2 gap-2">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                    </div>
 
                 </div>
 
                 <div class="carousel-item text-center">
                 
-                    <p class="lead">Melhor Chefe</p>
+                    <p class="fs-4 lead">DLC (Left Behind)</p>
                 
-                    <small>Gabriel - Design Gráfico</small>
-                
+                    <small class="fs-5">Nota 4</small>
+                                        
+                    <div class="d-flex justify-content-center align-items-center mt-2 gap-2">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                    </div>
+
                 </div>
 
                 <div class="carousel-item text-center">
                 
-                    <p class="lead">Funcionário Exemplar</p>
+                    <p class="fs-4 lead">The Last of Us Part II</p>
                 
-                    <small>Evandro - Hexa-IT</small>
+                    <small class="fs-5">Nota 5</small>
                 
+                    <div class="d-flex justify-content-center align-items-center mt-2 gap-2">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                        <img src="src/assets/icons/star-yellow.svg" style="width: 2%;" alt="Icone de Estrela Amarela">
+                    </div>
                 </div>
 
             </div>
 
             <!-- Botões de Navegação -->
-             <button type="button" class="carousel-control-prev" data-bs-target="#carrosselDepoimentos" data-bs-slide="prev">
+             <button type="button" class="carousel-control-prev" data-bs-target="#carrosselcriticas" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
 
-             <button type="button" class="carousel-control-next" data-bs-target="#carrosselDepoimentos" data-bs-slide="next">
+             <button type="button" class="carousel-control-next" data-bs-target="#carrosselcriticas" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
 
@@ -231,21 +281,18 @@
     </section>
 
     <footer id="footer" class="bg-dark py-4 text-white text-center">
-        <p>Texto 1</p>
-        <p>Texto 2</p>
+        <h2>The Last of Us Wiki</h2>
         <p>Redes Sociais: 
-            <a href="#" class="text-white">Instagram</a> 
             <a href="#" class="text-white">Linkedin</a>
         </p>
-        <p>2025 Digivicedex, Todos os direitos reservados</p>
+        <p>2025 TLOU Wiki, Todos os direitos reservados</p>
     </footer>
 
 
     <!-- import bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

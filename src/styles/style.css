@@ -8,12 +8,8 @@
 
 /* Hero */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 56px;
-    background-repeat: no-repeat;
-    background-position: right; 
+    margin: 70px;
+    margin-top: 110px;
 }
 
 /* Jogos */
